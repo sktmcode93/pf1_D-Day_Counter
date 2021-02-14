@@ -5,7 +5,7 @@ window.addEventListener("load", () => {
     for(let i=0; i<4 ; i++){
         const li = document.createElement("li");
         const img = document.createElement("img");
-        img.src = "/img/bg0" + (i+1) + ".jpg";
+        img.src = "../img/bg0" + (i+1) + ".jpg";
         img.onclick = ddbgClickEvent;
         li.appendChild(img);
         li.className = "bg-image";
