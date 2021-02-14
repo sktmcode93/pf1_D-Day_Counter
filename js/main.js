@@ -15,7 +15,7 @@ window.addEventListener("load", () => {
 
 const ddbgClickEvent = (e) => {
     const target = e.target.src;
-    const index = target.indexOf("/image/");
+    const index = target.indexOf("/img/");
     const number = target.substring(index);
     
     const countdown = document.querySelector(".countdown");
