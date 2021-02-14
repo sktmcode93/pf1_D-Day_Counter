@@ -21,7 +21,7 @@ const ddbgClickEvent = (e) => {
     const countdown = document.querySelector(".countdown");
     setTimeout(() => {
         setTimeout(() => {
-            countdown.style.backgroundImage = `url(..${number})`; 
+            countdown.style.backgroundImage = `url(${number})`; 
             countdown.classList.remove("bg-active"); 
         }, 150)
         countdown.classList.add("bg-active");
