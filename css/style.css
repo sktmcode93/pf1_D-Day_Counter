@@ -1,7 +1,7 @@
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* background */
 #PORTPOLIO1 .countdown {
-    background-image: url(../image/bg01.jpg);
+    background-image: url(../img/bg01.jpg);
     background-size: cover;
     width: 100%;
     min-height: 100vh;
