@@ -5,8 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D-Day Counter</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div id="app">
+        <section id="PORTPOLIO1">
+            <div class="countdown">
+                <div class="container">
+                    <div class="bg">
+                        <ul class="bg-menu"></ul>
+                        <span class="bg-toggle" onclick="ddbgToggleEvent()"><</span>
+                    </div>
+                    <div class="add add-onlist">
+                        <div class="add-btn">
+                            <input type="button" class="add-plus list-btn" value="+" onclick="ddaddClickHandler()">
+                            <span class="add-text list-text">추가하기</span>
+                        </div>
+                        <div class="sub-btn">
+                            <input type="button" class="sub-sub list-btn" value="-" onclick="ddDeletionClick()">
+                            <span class="sub-text list-text">삭제하기</span>
+                            <p class="sub-explain">삭제할 일정을 클릭하세요.</p>
+                        </div>
+                        <div class="list-box">
+                            <div class="list-head" ondrag="listDragHandler(event)" >
+                                <img src="image/listHead@2x.png" alt="리스트 헤드">
+                            </div>
+                            <ul class="day-list"></ul>
+                        </div>                   
+                    </div>
+                    <h1 class="title">D-Day Count</h1>
+                    <h2 class="sub-title">Happy NewYear</h2>
+                    <h3 class="date-title">2021년 1월 1일 00시 00분</h3>
+                    <div class="clock">
+                        <div class="box days">
+                            <div class="big Ldays">00</div>
+                            <span class="small">days</span>
+                        </div>
+                        <div class="box hours">
+                            <div class="big Lhours">00</div>
+                            <span class="small">hours</span>
+                        </div>
+                        <div class="box mins">
+                            <div class="big Lmins">00</div>
+                            <span class="small">mins</span>
+                        </div>
+                        <div class="box secs">
+                            <div class="big Lsecs">00</div>
+                            <span class="small">secs</span>
+                        </div>
+                    </div>
+                    <div class="add-popup">
+                        <div class="popup">
+                            <input type="text" class="popup-name" placeholder="ex) 다이어트 / 습관 만들기">
+                            <div class="popup-day">
+                                <input type="date" class="popup-date popup-date">
+                                <input type="time" class="popup-date popup-time">
+                            </div>
+                            <div class="popup-btns">
+                                <input type="button" value="추가" class="popup-add popup-btn" onclick="addDdayHandler()">
+                                <input type="button" value="취소" class="popup-cancel popup-btn" onclick="ddclearPopup()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
